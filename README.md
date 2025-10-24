@@ -15,7 +15,7 @@ This script was developed to overcome this specific challenge, ensuring a reliab
 Instead of creating a mirrored directory structure, this script uses the `git bundle` command. This approach has several key advantages:
 
 1.  **Resilience:** It performs a standard `git clone`, which successfully downloads all repository data even if the default branch is misconfigured.
-2.  **Portability:** It packages the entire repository—every commit, branch, and tag—into a **single, self-contained binary file** (a `.bundle`).
+2.  **Portability:** It packages the entire repository—every commit, branch, and tag into a **single, self contained binary file** (a `.bundle`).
 3.  **Reliability:** This `.bundle` file is a complete, valid Git repository that can be cloned reliably, as it does not depend on the original server's broken configuration.
 
 The script automates this process for multiple repositories across multiple GCP projects.
